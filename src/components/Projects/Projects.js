@@ -13,7 +13,7 @@ const Projects = () => (
         <BlogCard key={id}>
           <Img src={image}/>
           <TitleContent>
-            <HeaderThree title>
+            <HeaderThree isTitle>
               {title}
             </HeaderThree>
             <Hr />
@@ -30,8 +30,8 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={visit}>Code</ExternalLinks>
-            <ExternalLinks href={source}>Source</ExternalLinks>
+            {visit && <ExternalLinks target="_blank" href={visit}>Source</ExternalLinks>}
+            <ExternalLinks target="_blank" href={source}>Code</ExternalLinks>
           </UtilityList>
         </BlogCard>
       ))} 
