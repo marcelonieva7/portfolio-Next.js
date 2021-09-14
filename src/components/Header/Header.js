@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillFilePdf } from 'react-icons/ai';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { DiCssdeck } from 'react-icons/di';
 
@@ -33,13 +33,16 @@ const Header = () =>  (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/marcelonieva7">
+      <SocialIcons download href="/CarlosMarceloNieva_CV.pdf">
+        <AiFillFilePdf size ="3rem" />
+      </SocialIcons>
+      <SocialIcons target="_blank" href="https://github.com/marcelonieva7">
         <AiFillGithub size ="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/marcelo-nieva/">
+      <SocialIcons target="_blank" href="https://www.linkedin.com/in/marcelo-nieva/">
         <AiFillLinkedin size ="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://t.me/MarceloNieva7">
+      <SocialIcons target="_blank" href="https://t.me/MarceloNieva7">
         <FaTelegramPlane size ="3rem" />
       </SocialIcons>
     </Div3>
