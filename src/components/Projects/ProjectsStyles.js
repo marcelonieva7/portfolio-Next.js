@@ -18,7 +18,6 @@ row-gap: 3rem;
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  padding-bottom: 0;
 }
 
 `
@@ -102,14 +101,21 @@ transition: 0.5s;
 `;
 
 export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 0.5rem;
+}
 `
 export const Tag = styled.li`
-color: #D4ECDD;
-font-size: 1.3rem;
-background-color: #345B63;
-padding: 0.5rem;
-border-radius: 0.5rem;
+  color: #D4ECDD;
+  font-size: 1.3rem;
+  background-color: #345B63;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 95px;
+  }
 `

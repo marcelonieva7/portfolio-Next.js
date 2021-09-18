@@ -17,7 +17,7 @@ const Technologies = () =>  (
           <ListTitle>Fornt-End</ListTitle>
           <ListParagraph>
             Experiencia con <br />
-            React.js
+            React, Redux, Context, Styled Components, Tailwind
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -27,7 +27,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experiencia con <br />
-            Node.js y Mongo DB
+            Node, Express, Mongo DB, JOI, Passport, Firebase.
           </ListParagraph>
         </ListContainer>
       </ListItem>

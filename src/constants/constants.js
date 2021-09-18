@@ -12,7 +12,7 @@ export const projects = [
     title: 'Vaccination Center (Front)',
     description:"App con información sobre centros de vacunación en La Rioja para el curso 'MERN STACK' de la Universidad Nacional de La Rioja.",
     image: '/images/1.png',
-    tags: ['React', 'Chakra Ui', 'Form Hook'],
+    tags: ['React', 'Chakra Ui', 'Redux'],
     source: 'https://github.com/marcelonieva7/trabajo-final-react',
     visit: 'https://covidcentre.herokuapp.com/',
     id: 1,
@@ -47,6 +47,7 @@ export const projects = [
 export const TimeLineData = [
   { year: 1993, text: 'Aterrizaje en la Tierra.', },
   { year: 2020, text: 'Comienzo a estudiar desarrollo web.', },
-  { year: 2021, text: 'Carrera de Desarrollador FrontEnd En COderHouse.', },
+  { year: 2021, text: 'Carrera de Desarrollador FrontEnd En CoderHouse.', },
+  { year: 2021, text: 'Empiezo a desarrollar proyectos freelance', },
   { year: 2021, text: "Diplomatura 'MERN Stack' en La Universidad Nacional de La Rioja.", },
 ];
