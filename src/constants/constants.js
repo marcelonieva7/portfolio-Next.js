@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: 'Vaccination Center (Mobile)',
-    description: "Version nativa para dispositivos mobilesen el marco del curso 'MERN STACK' de la Universidad Nacional de La Rioja.",
+    description: "Version nativa para dispositivos mobiles en el marco del curso 'MERN STACK' de la Universidad Nacional de La Rioja.",
       image: '/images/3.png',
       tags: ['React Native', 'RN Firebase', 'RN Elements'],
     source: 'https://github.com/marcelonieva7/pilarTecnoApp/tree/final',
@@ -38,7 +38,7 @@ export const projects = [
     title: 'Portfolio',
     description: "Portfolio personal desarrollado con el frmaework de React Next.js y estilizado con Styled Components.",
     image: '/images/4.png',
-    tags: ['Next.js', 'Styled Components'],
+    tags: ['Next.js', 'Styled Components', 'Framer Motion'],
     source: 'https://github.com/marcelonieva7/portfolio-Next.js',
     id: 4,
   },
