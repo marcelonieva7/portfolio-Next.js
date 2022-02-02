@@ -63,6 +63,8 @@ export const TagList = styled.ul`
   justify-content: space-evenly;
   align-items: stretch;
   padding: 2rem;
+  flex-wrap: wrap;
+  row-gap: 8px;
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 0.5rem;
   }
