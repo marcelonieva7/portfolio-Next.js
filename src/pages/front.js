@@ -6,11 +6,12 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-import { frontProjects, frontTitle } from '../constants/constants'
+import { projects, frontTitle } from '../constants/constants'
 
 const Home = () => {
+  const frontProjects = projects.filter(({role}) => role.includes("Front"))
   return (
-    <Layout>
+    <Layout role="front">
       <Section grid>
         <Hero title={frontTitle}/>
         <BgAnimation />

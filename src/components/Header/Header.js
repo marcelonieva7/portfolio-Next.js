@@ -5,8 +5,9 @@ import { FaTelegramPlane } from 'react-icons/fa';
 import { DiCssdeck } from 'react-icons/di';
 import { useViewportScroll } from 'framer-motion'
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { resume } from "../../constants/constants"
 
-const Header = () =>  {
+const Header = ({role = "full"}) => {
   const { scrollY } = useViewportScroll()
   const [hidden, setHidden] = useState(false)
 
@@ -56,7 +57,7 @@ const Header = () =>  {
         </li>
       </Div2>
       <Div3>
-        <SocialIcons download href="/CarlosMarceloNieva_CV.pdf">
+        <SocialIcons download href={resume[role]}>
           <AiFillFilePdf size ="3rem" />
         </SocialIcons>
         <SocialIcons target="_blank" href="https://github.com/marcelonieva7">
