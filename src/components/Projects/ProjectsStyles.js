@@ -5,7 +5,7 @@ export const Img = styled.img`
   height:100%;
   overflow: hidden;
 `
-export const TitleContent = styled(motion.div)`
+export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
@@ -29,13 +29,13 @@ export const Hr = styled.hr`
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  padding: 0 20px 2rem;
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 1rem  ;
+    padding: 2rem 1rem;
 }
 `;
 
@@ -80,7 +80,7 @@ export const Tag = styled.li`
     width: 95px;
   }
 `
-export const CardLi = styled.li`
+export const CardLi = styled(motion.li)`
   position: relative;
   padding: 25px;
   height: 460px;
@@ -119,12 +119,34 @@ export const CardLi = styled.li`
     }
   }
 `
-export const CardContentContainer = styled(motion.div)`
+export const CardContentContainer = styled.div`
   width: 100%;
   height: 100%;
   position:${({open}) => open ? "fixed" : "relative"};
   display: ${({open}) => open ? "flex" : "block"};
   filter: drop-shadow(3px 3px 20px rgba(80,78,78,0.5));
+  border-radius: 20px;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    content: '';
+    display: ${({open}) => open ? "none" : "block"};
+    background: #212d4578;
+    transition: transform .6s;
+    right: auto;
+    bottom: auto;
+    width: 170%;
+    height: 100%;
+    transform-origin: right top;
+    transform: skewX(-30deg) scale(0, 1);
+  }
+  &:hover::before {
+    transform-origin: left top;
+    transform: skewX(-30deg) scale(1, 1);
+  }
   ${({open})=> open && (`
     top: 0;
     left: 0;
@@ -156,6 +178,7 @@ export const CardContent = styled(motion.div)`
   overflow: hidden;
   width: 100%;
   height: 100%;
+  max-height: 95vh;
   ${({open})=> open && (`
     height: auto;
     max-width: 75vh;
@@ -178,6 +201,7 @@ export const TitleContainer = styled(motion.div)`
   top: 15px;
   left: 15px;
   max-width: 300px;
+  z-index: 99;
   ${({open})=> open && (`
     top: 30px;
     left: 30px;
@@ -191,12 +215,12 @@ export const CardList = styled.ul`
   align-content: flex-start;
 `
 export const ContentContainer = styled(motion.div)`
-  padding: 70% 5% 5%;
+  padding: 47vh 5% 5%;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 100% 5% 5%;
   }
 `
-export const BtnClose = styled.button`
+export const BtnClose = styled(motion.button)`
   background-color: rgba(0,0,0,0.8);
   position: absolute;  
   right: 0;

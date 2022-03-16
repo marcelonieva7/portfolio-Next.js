@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const ImageContainer = styled.div`
@@ -27,7 +28,7 @@ export const MainImage = styled.img`
   width: 100%;
 `
 
-export const List = styled.ul`
+export const List = styled(motion.ul)`
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -97,7 +98,7 @@ export const ListParagraph = styled.p`
   }
 `
 
-export const ListItem = styled.li`
+export const ListItem = styled(motion.li)`
   max-width: 320px;
   display: flex;
   flex-direction: column;

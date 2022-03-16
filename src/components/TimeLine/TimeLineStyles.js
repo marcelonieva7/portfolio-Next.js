@@ -1,7 +1,8 @@
 
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const CarouselContainer = styled.ul`
+export const CarouselContainer = styled(motion.ul)`
   max-width: 1040px;
   background: #0F1624;
   padding: 0rem;
@@ -32,7 +33,7 @@ export const CarouselContainer = styled.ul`
     margin-bottom: 8px;
   }
 `
-export const CarouselMobileScrollNode = styled.div`
+export const CarouselMobileScrollNode = styled(motion.div)`
   @media ${props => props.theme.breakpoints.sm} {
     display: flex;
     min-width: ${({ final }) => final ? `120%;` : `min-content`}
@@ -117,7 +118,7 @@ export const CarouselItemText = styled.p`
     padding-right: 0;
   }
 `
-export const CarouselButtons = styled.div`
+export const CarouselButtons = styled(motion.div)`
   width: 288px;
 
   display: none;

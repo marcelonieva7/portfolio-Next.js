@@ -6,16 +6,16 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-import { projects, title } from '../constants/constants'
+import { frontProjects, frontTitle } from '../constants/constants'
 
 const Home = () => {
   return (
     <Layout>
-      <Section fullh grid>
-        <Hero title={title}/>
+      <Section grid>
+        <Hero title={frontTitle}/>
         <BgAnimation />
       </Section>
-      <Projects projects={projects}/>
+      <Projects projects={frontProjects}/>
       <Technologies />
       <Timeline />
       {/* <Acomplishments /> */}

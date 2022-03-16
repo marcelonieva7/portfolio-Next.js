@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const LeftSection = styled.div`
+export const LeftSection = styled(motion.div)`
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;

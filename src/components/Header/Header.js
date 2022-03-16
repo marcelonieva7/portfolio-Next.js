@@ -4,7 +4,6 @@ import { AiFillGithub, AiFillLinkedin, AiFillFilePdf } from 'react-icons/ai';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { DiCssdeck } from 'react-icons/di';
 import { useViewportScroll } from 'framer-motion'
-
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () =>  {
@@ -33,7 +32,7 @@ const Header = () =>  {
       transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
     >
       <Div1>
-        <Link href="/">
+        <Link href="#">
           <a style={{display: 'flex', alignItems: 'center', color: 'white', marginBotton: '20px'}}>
             <DiCssdeck size='3rem' /><Span>MN Dev</Span>
           </a>
