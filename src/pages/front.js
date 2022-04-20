@@ -12,7 +12,7 @@ const Home = () => {
   const frontProjects = projects.filter(({role}) => role.includes("Front"))
   return (
     <Layout role="front">
-      <Section grid>
+      <Section fullh grid>
         <Hero title={frontTitle}/>
         <BgAnimation />
       </Section>
